@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+p{
+    font-family: "Open Sans", sans-serif;    
+}
+
+@keyframes fadeOut{
+    to{
+        opacity:0;
+    }
+}
+
+@media screen and (min-width: 320px){
+
+    .jl-page-wrapper, .jl-preloader{
+
+        width: 100%;
+        height: 100vh;
+        display: table;
+        background-color: #1C1C1C;
+        border: 30px solid #000;
+    }
+
+    .jl-preloader{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .jl-preloader-inner{
+        margin-top: -45px;
+    }
+
+    .jl-topbar{
+
+        width: 100%;
+        height: 110px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    .jl-logo{
+
+        width: 74px;
+        height: 110px;
+        float: left;
+        margin-left: 60px;
+        background-color: #2ccb69;
+        border-radius: 0px 0px 37px 0px;
+    
+    }
+
+    .jl-logo img{
+        
+        width: 46px;
+        height: 31px;
+        display: block;
+        margin: 55px auto 0 auto;
+
+    }
+    
+    .jl-menu {
+
+        display: none;
+
+    }
+
+    .jl-btn-contact{
+
+        width: 45px;
+        height: 45px;
+        background-image: url("../images/icon-contact-close.svg");
+        background-color: #2ccb69;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        transition: all 300ms ease-out;
+    }
+   
+    .jl-contact-info{
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        display: none;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+    }
+
+    .jl-contact-info-inner{
+        display: table;
+        width: 100%;
+        float: right;        
+    }
+
+    .jl-contact-info-inner p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+      
+    .jl-social-links{
+        width: 100%;
+        height: 45px;
+        display: block;
+        position: relative;
+        left: -13px;
+        margin-top: 7px;
+    }
+
+    .jl-social{
+        width: 45px; 
+        height: 45px;
+        display: inline-block;        
+    }
+
+    .jl-social > img{
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 13px auto 0 auto;
+    }
+
+    .jl-contact-info-corner{
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+        display: relative;
+    } 
+    .jl-contact-info-corner:after{
+        content: "";
+        width: 23px;
+        height: 25px;
+        display: block;
+        display: relative;
+        position: absolute;
+        bottom: -25px;
+        right:0;
+        background-color:transparent;
+        background-image: url(../images/corner.svg);
+    }
+
+    .jl-btn-contact, a :hover{
+        cursor: pointer;
+    }
+
+    /*  HOME  */
+
+    #jl-display-text{
+        margin-top: 10%;       
+    }
+
+    #jl-home-presentation{
+        background-image: url('../images/joao-lemon-designer-home.png');
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+    }
+}
+
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    
+    .jl-menu{
+
+        height: 110px;
+        display: table;
+        float: left;
+        margin-left: 30px;
+        
+    }
+
+    .jl-menu a{
+
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #bcbcbc;
+        margin:50px 20px 0 20px;
+        text-transform: lowercase;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .jl-menu a:first-child{
+
+        margin-left: 0;
+
+    }
+
+    .jl-menu a:hover{
+        color: #2ccb69;
+    }
+
+    .jl-menu a:before{
+
+        content: "";
+        width: 0;
+        height: 4px;
+        background-color: #2ccb69;
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        transition: all 200ms ease-out;
+
+    }
+
+    .jl-menu a:hover::before{
+
+        width: 100%;
+       
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1364px){
+    
+}
+
+@media screen and (min-width: 1600px){
+    
+}
+
+/* CLASSES UTILITARIAS */
+
+.jl-title{
+    font-family: "Abril Fatface", serif;
+    font-weight: normal;  
+}
+
+.jl-title-big{
+    font-size: 120px;
+}
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4D4C4C;
+}
+
+.jl-text-light {
+    color: #bcbcbc;
+}
+
+.jl-text-black {
+    color: #000;
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light {
+    background-color: #bcbcbc;
+}
+
+.jl-bg-black {
+    background-color: #000;
+}
+
+.jl-mar-15{
+    margin: 15px;
+}
+
+.jl-mar-top-15{
+    margin-top: 15px;
+}
+
+.jl-mar-bottom-15{
+    margin-bottom: 15px;
+}
+
+.jl-mar-15-left{
+    margin-left: 15px;
+}
+
+.jl-mar-right-15{
+    margin-right: 15px;
+}
+
+.jl-pad-15{
+    padding: 15px;
+}
+
+.jl-pad-top-15{
+    padding-top: 15px;
+}
+
+.jl-pad-bottom-15{
+    padding-bottom: 15px;
+}
+
+.jl-pad-15-left{
+    padding-left: 15px;
+}
+
+.jl-pad-right-15{
+    padding-right: 15px;
+}
+
+.jl-full-height{
+    height: 100vh;
+}
+
+.jl-first-section{
+    height: calc(100vh - 30px);
+    border-bottom: 10px black solid;
+}
+
+
+/* CLASSES DE COMPORTAMENTO */
+.jl-is-open{
+    display: block;    
+}
+.jl-change-icon{
+    background-position-y: -45px;    
+}
+
+.jl-fade-out{
+    animation: fadeOut 2s forwards ease-out;
+}
+
